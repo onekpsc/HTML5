@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msg{
+            padding: 10px; 
+            margin: 10px; 
+            border: 1px solid black;
+        }
+        .success{
+            background-color: green;
+        }
+        .info{
+            background-color: cyan;
+        }
+        .danger{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p style="padding: 10px; margin: 10px; border: 1px solid black;">This is a messege</p> -->
+    <p class="msg">This is a notification messege</p>
+    <p class="msg success">You are now loggged in </p>
+    <p class="msg info">You have 5 new messeges in your inbox</p>
+    <div class="msg danger">
+        <p>Are you sure you want to delete your account ?</p>
+        <button onClick="myFunction()">YES</button>
+        <button>NO</button>
+    </div>
+    <script>
+        function myFunction(){
+            document.getElementsByClassName("msg danger")[0].style.display = "none";
+        }
+    </script>
+</body>
+</html>
