@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements</title>
+    <style>
+        .explain {
+            margin: 15px;
+            padding: 15px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="explain">
+        <h2>1. Input and Label Element Example</h2>
+        <label for="fname"> First Name : </label><br>
+        <input type="text" id="fname" name="fname">
+    </div>
+    <div class="explain">
+        <h2>2. Select Element Example </h2>
+        <label for="course"> Choose your course : </label>
+        <select name="course">
+            <!-- size, multiple  -->
+            <option value="html"> HTML Course</option>
+            <option value="css"> CSS Course</option>
+            <option value="js"> JAVASCRIPT Course</option>
+        </select>
+    </div>
+    <div class="explain">
+        <h2>3. Textarea Element Example</h2>
+        <textarea name="msg" cols="50" rows="5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequatur, corporis neque aperiam, dicta debitis delectus officiis odio tempora nobis vel doloremque. Cupiditate, dicta deleniti omnis animi aspernatur adipisci dolorum!
+        </textarea>
+    </div>
+    <div class="explain">
+        <h2>4. Button Element Example</h2>
+        <button type="button" onclick="alert('welcome to onekpsc')" disabled>Click me</button>
+    </div>
+    <div class="explain">
+        <h2>5. Fieldset and Legend Elements Example</h2>
+        <form action="#">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <label for="username"> Username : </label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password"> password : </label><br>
+                <input type="password" id="password" name="password"><br>
+                <button type="button">submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="explain">
+        <h2>6. Datalist Element Example</h2>
+        <form action="#">
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer"></option>
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist>
+        </form>
+    </div>
+    <div class="explain">
+        <h2>7. Output Element Example</h2>
+        <form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="a" name="a" value="50">
+            <input type="text" id="b" name="b" value="50">
+            <output name="x" for="a b"></output>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
