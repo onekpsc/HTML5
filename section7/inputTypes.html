@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+    <style>
+        .explain{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="explain">
+        <h3>Input Text Type</h3>
+        <input type="text">
+    </div>
+    <div class="explain">
+        <h3>Input Password Type</h3>
+        <input type="password">
+    </div>
+    <div class="explain">
+        <h3>Input Button Type</h3>
+        <input type="submit" value="custombuttonname">
+    </div>
+    <div class="explain">
+        <h3>Input Reset Type</h3>
+        <input type="reset">
+    </div>
+    <div class="explain">
+        <h3>Input Radio Type</h3>
+        <form action="#">
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female"> Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </form>
+    </div>
+    <div class="explain">
+        <h3>Input Checkbox Type</h3>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="cycle">
+        <label for="vehicle1"> I have a cycle</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+        <label for="vehicle2"> I have a Bike</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="car">
+        <label for="vehicle3"> I have a car</label>
+    </div>
+    <div class="explain">
+        <h3>Input Color Type</h3>
+        <label for="favColor"> Select Your Favorite Color</label>
+        <input type="color">
+    </div>
+    <div class="explain">
+        <h3>Input Date Type</h3>
+        <label for="birthday">Enter your birthday : </label>
+        <input type="date" id="birthday" name="birthday">
+        <input type="date" id="birthday" name="birthday" min="2020-09-01">
+        <input type="date" id="birthday" name="birthday" max="2020-12-01">
+    </div>
+    <div class="explain">
+        <h3>Input Datetime-local Type</h3>
+        <label for="birthdaytime">Birthdaytime (date and Time)</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+    </div>
+    <div class="explain">
+        <h3>Input Email Type</h3>
+        <input type="email" id="email" name="email">
+    </div>
+    <div class="explain">
+        <h3>Input File Type</h3>
+        <label for="myfile">Select a file</label>
+        <input type="file" id="myfile" name="myfile">
+        <input type="file" id="myfile" name="myfile" multiple>
+    </div>
+    <div class="explain">
+        <h3>Input Number Type</h3>
+        <label for="quantity">How much products do you want ?</label>
+        <input type="number" id="quantity" name="quantity">
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+    </div>
+    <div class="explain">
+        <h3>Input Type Range</h3>
+        <label for="vol">Choose a volume (Between 0 to 50)</label>
+        <input type="range" id="vol" name="vol">
+        <input type="range" id="vol" name="vol" min="0" max="50">
+    </div>
+    <div class="explain">
+        <h3>Input Search Type</h3>
+        <label for="gsearch"> Search Google</label>
+        <input type="search" id="gsearch" name="gsearch">
+    </div>
+    <div class="explain">
+        <h3>Input Tel Type </h3>
+        <label for="phone"> Enter your phone number : </label>
+        <input type="tel" id="phone" name="phone" placeholder="+91-6363462791">
+    </div>
+    <div class="explain">
+        <h3>Input Time Type</h3>
+        <label for="appt">Select a time :</label>
+        <input type="time" id="appt" name="appt">
+    </div>
+    <div class="explain">
+        <h3>Input Week Type</h3>
+        <label for="week">Select a Week :</label>
+        <input type="week" id="week" name="week">
+    </div>
+</body>
+</html>
