@@ -1,1 +1,1 @@
-HTML5 Complete Course In Kannada
+HTML5 Complete Course
